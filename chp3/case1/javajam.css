@@ -1,0 +1,42 @@
+body {
+    background-color: #fcebb6;
+    font-family: Verdana, Arial, sans-serif;
+    color: #221811;
+}
+
+header {
+    background-color: #d2b48c;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 200%;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer {
+    font-size: .60em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #d2b48c;
+    font-style: italic;
+}

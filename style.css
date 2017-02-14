@@ -1,0 +1,40 @@
+/*
+02/13/17
+Changed body element background color and font color
+Changed a element text decoration to underline
+Gave a selection color
+Auto Prefixed selection for moz browser
+*/
+
+body{
+  background-color: #01579B;
+  color:#fff;
+}
+
+
+a{
+  text-decoration: underline;;
+  color:#fff;
+}
+
+h1::-moz-selection{
+  background:#F1C600;
+  }
+
+h1::selection{
+  background:#F1C600;
+  }
+
+  li::-moz-selection{
+    background: #F1C600;
+  }
+
+  li::selection{
+    background: #F1C600;
+  }
+  a::-moz-selection{
+    background: #F1C600;
+  }
+  a::selection{
+    background: #F1C600;
+  }
