@@ -1,40 +1,106 @@
-/*
+    /*
 02/13/17
 Changed body element background color and font color
 Changed a element text decoration to underline
 Gave a selection color
 Auto Prefixed selection for moz browser
+
+02/21/17
+Started desgining the site on a mobile first approach
+created a center class that centers content using flexbox
+Sectioned my css into chuncks where it is divided into sections
+Took off list styles bullets
+Created a bottom line on the chapters and added extra padding for the top
+Added a underline class
+added more fonts to the page
+need to change the link styles to a different font rather than relying on font color change
 */
+    /******
 
-body{
-  background-color: #01579B;
-  color:#fff;
-}
+Selection
 
+******/
 
-a{
-  text-decoration: underline;;
-  color:#fff;
-}
+    h1::-moz-selection {
+        background: #F1C600;
+    }
 
-h1::-moz-selection{
-  background:#F1C600;
-  }
+    h1::selection {
+        background: #F1C600;
+    }
 
-h1::selection{
-  background:#F1C600;
-  }
+    li::-moz-selection {
+        background: #F1C600;
+    }
 
-  li::-moz-selection{
-    background: #F1C600;
-  }
+    li::selection {
+        background: #F1C600;
+    }
 
-  li::selection{
-    background: #F1C600;
-  }
-  a::-moz-selection{
-    background: #F1C600;
-  }
-  a::selection{
-    background: #F1C600;
-  }
+    a::-moz-selection {
+        background: #F1C600;
+    }
+
+    a::selection {
+        background: #F1C600;
+    }
+    /*************/
+    /*******
+  NAV
+*******/
+
+    .nav a {
+        font-size: 4em;
+        margin: 0 20px 0 20px;
+    }
+    /**************/
+    /****
+Font-size
+****/
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h2 {
+        font-size: 4.0em;
+    }
+
+    h3 {
+        font-size: 3.0em;
+    }
+    /************/
+
+    body {
+        background-color: #01579B;
+        color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+        color: tomato;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .underline {
+        border-bottom: 4px solid #fff;
+        margin-top: 50px;
+    }
+
+    li {
+        font-size: 2em;
+    }
+
+    .underline {
+        font-size: 4em;
+    }
