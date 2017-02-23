@@ -1,0 +1,16 @@
+/***
+COMMENTS
+
+added style for dd and dt tags for the new project page
+
+***/
+
+
+
+dt{
+  font-size: 3em;
+  font-family: sans-serif;
+}
+dd{
+  font-size:3em;
+}
