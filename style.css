@@ -14,6 +14,16 @@ Created a bottom line on the chapters and added extra padding for the top
 Added a underline class
 added more fonts to the page
 need to change the link styles to a different font rather than relying on font color change
+
+
+03/01/17
+
+added a text rendering  property
+changed <a> font color
+added a reponsive metatag to the html
+changed more fonts size
+added some margins a
+
 */
     /******
 
@@ -29,6 +39,7 @@ Selection
         background: #F1C600;
     }
 
+    ;
     li::-moz-selection {
         background: #F1C600;
     }
@@ -50,26 +61,37 @@ Selection
 *******/
 
     .nav a {
-        font-size: 4em;
-        margin: 0 20px 0 20px;
+        font-size: 1.45em;
+        margin: 0 5px 0 5px;
+        margin-top: 20px;
     }
     /**************/
     /****
-Font-size
+Font
 ****/
 
     h1 {
-        font-size: 4.5em;
+        font-size: 1.5em;
     }
 
     h2 {
-        font-size: 4.0em;
+        font-size: 1.25em;
     }
 
     h3 {
-        font-size: 3.0em;
+        font-size: 1.15em;
     }
+
+    li {
+        font-size: 1em;
+    }
+    html {
+        text-rendering: optimizeLegibility;
+    }
+
+
     /************/
+
 
     body {
         background-color: #01579B;
@@ -78,7 +100,7 @@ Font-size
 
     a {
         text-decoration: none;
-        color: tomato;
+        color: #F14500;
     }
 
     li {
@@ -93,14 +115,15 @@ Font-size
     }
 
     .underline {
-        border-bottom: 4px solid #fff;
+        border-bottom: 1.75px solid #fff;
         margin-top: 50px;
-    }
-
-    li {
-        font-size: 2em;
+        margin-bottom: 5px;
     }
 
     .underline {
-        font-size: 4em;
+        font-size: 1em;
     }
+
+ul{
+  padding-left: 15px;
+}
