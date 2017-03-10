@@ -24,35 +24,66 @@ added a reponsive metatag to the html
 changed more fonts size
 added some margins a
 
+03/08/17
+
+changed font family for entire document
+added padding for the front page title
+adjusted nav font to fit smaller resolutions
+
+todo
+pick some images to add for about and projects 
+create responsive
+
+
 */
+    /*@font-face {
+  font-family: 'Futura';
+  src:url('FuturaLT-Book.ttf')  format('truetype');
+      }
+**/
+
+    @font-face {
+        font-family: 'galano';
+        src: url('galanogrotesquealtdemo-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('galanogrotesquealtdemo-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('galanogrotesquealtdemo-bold-webfont.ttf') format('truetype');
+        /* Safari, Android, iOS */
+    }
+
+    @font-face {
+        font-family: 'acherus';
+        src: url('acherus_grotesque_-_regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('acherus_grotesque_-_regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('acherus_grotesque_-_regular-webfont.ttf') format('truetype');
+        /* Safari, Android, iOS */
+    }
     /******
 
 Selection
 
 ******/
 
-    h1::-moz-selection {
+    h1 ::-moz-selection {
         background: #F1C600;
     }
 
-    h1::selection {
+    h1 ::selection {
         background: #F1C600;
     }
 
-    ;
-    li::-moz-selection {
+    li ::-moz-selection {
         background: #F1C600;
     }
 
-    li::selection {
+    li ::selection {
         background: #F1C600;
     }
 
-    a::-moz-selection {
+    a ::-moz-selection {
         background: #F1C600;
     }
 
-    a::selection {
+    a ::selection {
         background: #F1C600;
     }
     /*************/
@@ -61,7 +92,7 @@ Selection
 *******/
 
     .nav a {
-        font-size: 1.45em;
+        font-size: 1.25em;
         margin: 0 5px 0 5px;
         margin-top: 20px;
     }
@@ -70,8 +101,12 @@ Selection
 Font
 ****/
 
+    html {
+        font-family: acherus, Verdana, Arial, sans-serif;
+    }
+
     h1 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     h2 {
@@ -85,13 +120,11 @@ Font
     li {
         font-size: 1em;
     }
+
     html {
         text-rendering: optimizeLegibility;
     }
-
-
     /************/
-
 
     body {
         background-color: #01579B;
@@ -124,6 +157,10 @@ Font
         font-size: 1em;
     }
 
-ul{
-  padding-left: 15px;
-}
+    ul {
+        padding-left: 15px;
+    }
+
+    .fp-title{
+      padding-left:15px;
+    }
