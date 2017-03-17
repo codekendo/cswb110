@@ -31,9 +31,18 @@ added padding for the front page title
 adjusted nav font to fit smaller resolutions
 
 todo
-pick some images to add for about and projects 
+pick some images to add for about and projects
 create responsive
 
+03/15/17
+
+Added a div content-wrapper
+added a media query to create flex-box container to center my content on index.html
+smimplfy selection puesdo element
+Added new style to the peusdo element for white font
+AutoPrefixed css
+added h1 and underline selection color
+added pictures to be added next week while I work on the
 
 */
     /*@font-face {
@@ -41,6 +50,10 @@ create responsive
   src:url('FuturaLT-Book.ttf')  format('truetype');
       }
 **/
+
+    * {
+        box-sizing: border-box;
+    }
 
     @font-face {
         font-family: 'galano';
@@ -63,29 +76,14 @@ Selection
 
 ******/
 
-    h1 ::-moz-selection {
+    a::selection {
         background: #F1C600;
     }
 
-    h1 ::selection {
-        background: #F1C600;
+    h1::selection, .underline::selection{
+      background:#3F4B54;
     }
 
-    li ::-moz-selection {
-        background: #F1C600;
-    }
-
-    li ::selection {
-        background: #F1C600;
-    }
-
-    a ::-moz-selection {
-        background: #F1C600;
-    }
-
-    a ::selection {
-        background: #F1C600;
-    }
     /*************/
     /*******
   NAV
@@ -141,9 +139,21 @@ Font
     }
 
     .center {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -161,6 +171,28 @@ Font
         padding-left: 15px;
     }
 
-    .fp-title{
-      padding-left:15px;
+    .fp-title {
+        padding-left: 15px;
+    }
+
+    @media only screen and (min-width:1024px) {
+        .content-wrapper {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
     }

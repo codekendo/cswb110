@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+#heroroad {
+    background-image: url('./img/heroroad.jpg');
+    background-size: cover;
+    height: 250px;
+    background-repeat: no-repeat;
+}
+
+#heroguitar {
+    background-image: url('./img/heroguitar.jpg');
+    background-size: cover;
+    height: 250px;
+    background-repeat: no-repeat;
+}
+
+#heromugs {
+    background-image: url('./img/heromugs.jpg');
+    background-size: cover;
+    height: 250px;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: #fcebb6;
+    font-family: Verdana, Arial, sans-serif;
+    color: #221811;
+    background-image: url('./img/background.gif');
+}
+
+header {
+    background-color: #d2b48c;
+    height: 150px;
+    background-image: url('./img/javajamlogo.jpg');
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 3em;
+    padding-top: 45px;
+    padding-left: 220px;
+}
+
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #231814;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 3px 3px 3px 3px #333;
+}
+
+nav {
+    float: left;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #FEF6C2;
+}
+
+nav a:visited {
+    color: #d2b48c;
+}
+
+nav a:hover {
+    color: #cc9933;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+footer {
+    font-size: .60em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #d2b48c;
+    font-style: italic;
+    padding-bottom: 10px;
+    border-top: 2px solid #221811;
+}
+
+h4 {
+    background-color: #d2b48c;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+    clear: left;
+    border-bottom: 1px solid black;
+}
+
+header, nav, main, footer {
+    display: block;
+}
+
+main {
+    padding: 0em 0em 2em 0em;
+    display: block;
+    background-color: #fef6c2;
+    margin-left: 200px;
+}
+
+main h2, main h3, main h4, main p, main div, main ul, main, dl {
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+.details {
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+}
+
+.floatleft {
+    float: left;
+    padding: 0px 20px 20px 0px;
+}
+
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.details p {
+    display: inline;
+    padding: 0px;
+}
+
+.details a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.picture {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width:1024px) {
+    body {
+        margin: 0;
+        background-image: none;
+    }
+    #wrapper {
+        width: auto;
+        min-width: 0px;
+        margin: 0px;
+        padding: 0px;
+        box-shadow: none;
+    }
+    header {
+        border-bottom: 5px solid #fef6c2;
+    }
+    h1 {
+        margin-top: 0px;
+        margin-bottom: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-size: 2.5em;
+    }
+    nav {
+        float: none;
+        width: auto;
+        padding-top: 0px;
+        margin: 10px;
+        font-size: 1.3em;
+    }
+    nav li {
+        display: inline-block;
+    }
+    nav a {
+        padding: 1em;
+        width: 8em;
+        font-weight: bold;
+        border-style: none;
+    }
+    nav ul {
+        padding: 0px;
+        margin: 0px;
+    }
+    #heroroad, #heromugs, #heroguitar {
+        margin: 0px;
+        padding: 0px;
+    }
+    main {
+        padding: 0px;
+        margin: 0px;
+        font-size: 90%;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    header {
+        background-image: url('./img/javajammini.jpg');
+        height: 128px;
+    }
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        padding-left: 0px;
+    }
+    nav {
+        margin: 0px;
+    }
+    nav a {
+        display: block;
+        padding: .2em;
+        width: auto;
+        border-bottom: 1px solid #fef6c2;
+    }
+    nav li {
+        display: block;
+    }
+    main {
+        padding: 1px;
+    }
+    h2 {
+        padding: .5em 0 0 .5em;
+        margin-right: .5em;
+    }
+    details {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #heroroad, #heromugs, #heroguitar {
+        background-image: none;
+        height: auto;
+    }
+    .floatleft{
+      padding-left: .5em;
+      padding-right: .5em;
+    }
+    #mobile{
+      display: inline;
+    }
+    #desktop{
+      display: none;
+    }
+}
