@@ -1,10 +1,9 @@
-    /*
+/*
 02/13/17
 Changed body element background color and font color
 Changed a element text decoration to underline
 Gave a selection color
 Auto Prefixed selection for moz browser
-
 02/21/17
 Started desgining the site on a mobile first approach
 created a center class that centers content using flexbox
@@ -14,28 +13,20 @@ Created a bottom line on the chapters and added extra padding for the top
 Added a underline class
 added more fonts to the page
 need to change the link styles to a different font rather than relying on font color change
-
-
 03/01/17
-
 added a text rendering  property
 changed <a> font color
 added a reponsive metatag to the html
 changed more fonts size
 added some margins a
-
 03/08/17
-
 changed font family for entire document
 added padding for the front page title
 adjusted nav font to fit smaller resolutions
-
 todo
 pick some images to add for about and projects
 create responsive
-
 03/15/17
-
 Added a div content-wrapper
 added a media query to create flex-box container to center my content on index.html
 smimplfy selection puesdo element
@@ -43,156 +34,153 @@ Added new style to the peusdo element for white font
 AutoPrefixed css
 added h1 and underline selection color
 added pictures to be added next week while I work on the
-
 */
-    /*@font-face {
-  font-family: 'Futura';
-  src:url('FuturaLT-Book.ttf')  format('truetype');
-      }
+/*@font-face {
+font-family: 'Futura';
+src:url('FuturaLT-Book.ttf')  format('truetype');
+  }
 **/
 
-    * {
-        box-sizing: border-box;
-    }
+* {
+    box-sizing: border-box;
+}
 
-    @font-face {
-        font-family: 'galano';
-        src: url('galanogrotesquealtdemo-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-        url('galanogrotesquealtdemo-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-        url('galanogrotesquealtdemo-bold-webfont.ttf') format('truetype');
-        /* Safari, Android, iOS */
-    }
+@font-face {
+    font-family: 'galano';
+    src: url('galanogrotesquealtdemo-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('galanogrotesquealtdemo-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('galanogrotesquealtdemo-bold-webfont.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
 
-    @font-face {
-        font-family: 'acherus';
-        src: url('acherus_grotesque_-_regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-        url('acherus_grotesque_-_regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-        url('acherus_grotesque_-_regular-webfont.ttf') format('truetype');
-        /* Safari, Android, iOS */
-    }
-    /******
-
+@font-face {
+    font-family: 'acherus';
+    src: url('acherus_grotesque_-_regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('acherus_grotesque_-_regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('acherus_grotesque_-_regular-webfont.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+/******
 Selection
-
 ******/
 
-    a::selection {
-        background: #F1C600;
-    }
+a::selection {
+    background: #F1C600;
+}
 
-    h1::selection, .underline::selection{
-      background:#3F4B54;
-    }
+h1::selection, .underline::selection{
+  background:#3F4B54;
+}
 
-    /*************/
-    /*******
-  NAV
+/*************/
+/*******
+NAV
 *******/
 
-    .nav a {
-        font-size: 1.25em;
-        margin: 0 5px 0 5px;
-        margin-top: 20px;
-    }
-    /**************/
-    /****
+.nav a {
+    font-size: 1.25em;
+    margin: 0 5px 0 5px;
+    margin-top: 20px;
+}
+/**************/
+/****
 Font
 ****/
 
-    html {
-        font-family: acherus, Verdana, Arial, sans-serif;
-    }
+html {
+    font-family: acherus, Verdana, Arial, sans-serif;
+}
 
-    h1 {
-        font-size: 1.3em;
-    }
+h1 {
+    font-size: 1.3em;
+}
 
-    h2 {
-        font-size: 1.25em;
-    }
+h2 {
+    font-size: 1.25em;
+}
 
-    h3 {
-        font-size: 1.15em;
-    }
+h3 {
+    font-size: 1.15em;
+}
 
-    li {
-        font-size: 1em;
-    }
+li {
+    font-size: 1em;
+}
 
-    html {
-        text-rendering: optimizeLegibility;
-    }
-    /************/
+html {
+    text-rendering: optimizeLegibility;
+}
+/************/
 
-    body {
-        background-color: #01579B;
-        color: #fff;
-    }
+body {
+    background-color: #01579B;
+    color: #fff;
+}
 
-    a {
-        text-decoration: none;
-        color: #F14500;
-    }
+a {
+    text-decoration: none;
+    color: #F14500;
+}
 
-    li {
-        list-style: none;
-    }
+li {
+    list-style: none;
+}
 
-    .center {
+.center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.underline {
+    border-bottom: 1.75px solid #fff;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.underline {
+    font-size: 1em;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+.fp-title {
+    padding-left: 15px;
+}
+
+@media only screen and (min-width:1024px) {
+    .content-wrapper {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
+        -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: center;
         -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
-
-    .underline {
-        border-bottom: 1.75px solid #fff;
-        margin-top: 50px;
-        margin-bottom: 5px;
-    }
-
-    .underline {
-        font-size: 1em;
-    }
-
-    ul {
-        padding-left: 15px;
-    }
-
-    .fp-title {
-        padding-left: 15px;
-    }
-
-    @media only screen and (min-width:1024px) {
-        .content-wrapper {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -webkit-box-pack: center;
-            -webkit-justify-content: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -webkit-align-items: center;
-            -ms-flex-align: center;
-            align-items: center;
-        }
-    }
+}
