@@ -13,7 +13,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 #section2 {
@@ -21,14 +26,24 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 100vh;
 }
 
 #section3 {
     background-image: url('./img/StockSnap_UNAG6YA5AP.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 100vh;
     background-position: center;
 }
 
@@ -37,7 +52,12 @@
     background-image: url('./img/StockSnap_IQ4ZKWOZX1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 100vh;
     background-position: center;
 
 }
@@ -47,7 +67,12 @@
     background-image: url('./img/StockSnap_UT6ZSX9SBL.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 100vh;
     background-position: center;
 
 }
@@ -57,7 +82,12 @@
     background-image: url('./img/StockSnap_8FYGSC95OD.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 100vh;
     background-position: center;
 
 }
@@ -67,16 +97,25 @@
     background-image: url('./img/StockSnap_BENS2VYCMW.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 100vh;
     background-position: center;
-
 }
 
 #section8 {
     background-image: url('./img/StockSnap_P1GPWXSZU2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 100vh;
     background-position: center;
 
 }
@@ -86,7 +125,12 @@
     background-image: url('./img/StockSnap_UOL0RLOK4C.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 100vh;
     background-position: center;
 
 }

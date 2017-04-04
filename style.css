@@ -39,8 +39,15 @@ added images section element to the about page
 added a table into the index.html
 created a index-table.html
 added images to the sections in the about page
+04/03/17
+Changed the contact page to include a form
+added 100vh to the images in the about.hmtl
+added centering text within the images
 
+****todo
 
+create a media query the 100vh so that the style fits on landscape on phones
+choose a better font and color and size to better contrast the words with the pictures.
 
 */
 /*@font-face {
