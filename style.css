@@ -44,10 +44,19 @@ Changed the contact page to include a form
 added 100vh to the images in the about.hmtl
 added centering text within the images
 
-****todo
+04/14/17
 
+added Webpack but did not configure it
+Changed the a font color better contrast based on AChecker website
+Changed the a body selection based on AChecker
+
+
+****todo
+configure webpack for css loader and one bundle
+create a medium img background and lazyload images
 create a media query the 100vh so that the style fits on landscape on phones
 choose a better font and color and size to better contrast the words with the pictures.
+changed back into
 
 */
 /*@font-face {
@@ -80,7 +89,7 @@ Selection
 ******/
 
 a::selection {
-    background: #F1C600;
+    background: #FF1100;
 }
 
 h1::selection, .underline::selection{
@@ -134,7 +143,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #F14500;
+    color: #FF9400;
 }
 
 li {
