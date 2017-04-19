@@ -54,16 +54,13 @@ changed back to li list rather than table for the home page
 
 04/18/17
 
-configured webpack to index.html
-used a css-loader for style.css
-and file loader for web fonts
-added an index.js to start javascript side of things
-changed fontpath 
+
 
 
 
 
 ****todo
+configure webpack for css loader and one bundle
 
 create a medium img background and lazyload images
 https://codepen.io/jmperez/pen/yYjPER
@@ -83,17 +80,17 @@ src:url('FuturaLT-Book.ttf')  format('truetype');
 
 @font-face {
     font-family: 'galano';
-    src: url('./galanogrotesquealtdemo-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-    url('./galanogrotesquealtdemo-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-    url('./galanogrotesquealtdemo-bold-webfont.ttf') format('truetype');
+    src: url(fonts/galanogrotesquealtdemo-bold-webfont.woff2) format('woff2'), 
+    url(fonts/galanogrotesquealtdemo-bold-webfont.woff) format('woff'), 
+    url(fonts/galanogrotesquealtdemo-bold-webfont.ttf) format('truetype');
     /* Safari, Android, iOS */
 }
 
 @font-face {
     font-family: 'acherus';
-    src: url('./acherus_grotesque_-_regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-    url('./acherus_grotesque_-_regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-    url('./acherus_grotesque_-_regular-webfont.ttf') format('truetype');
+    src: url(fonts/acherus_grotesque_-_regular-webfont.woff2) format('woff2'), 
+    url(fonts/acherus_grotesque_-_regular-webfont.woff) format('woff'), 
+    url(fonts/acherus_grotesque_-_regular-webfont.ttf) format('truetype');
     /* Safari, Android, iOS */
 }
 /******

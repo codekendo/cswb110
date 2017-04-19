@@ -1,0 +1,23 @@
+{
+  "name": "cswb110",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codekendo/cswb110.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codekendo/cswb110/issues"
+  },
+  "homepage": "https://github.com/codekendo/cswb110#readme",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1"
+  }
+}
