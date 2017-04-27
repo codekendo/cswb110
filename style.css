@@ -58,9 +58,12 @@ configured webpack to index.html
 used a css-loader for style.css
 and file loader for web fonts
 added an index.js to start javascript side of things
-changed fontpath 
+changed fontpath
 
+04/24/17
 
+added new lower image resolutions files
+optimized all images to remove exif data and compressed them
 
 
 ****todo

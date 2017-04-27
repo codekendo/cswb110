@@ -54,13 +54,16 @@ changed back to li list rather than table for the home page
 
 04/18/17
 
-
+configured webpack to index.html
+used a css-loader for style.css
+and file loader for web fonts
+added an index.js to start javascript side of things
+changed fontpath 
 
 
 
 
 ****todo
-configure webpack for css loader and one bundle
 
 create a medium img background and lazyload images
 https://codepen.io/jmperez/pen/yYjPER
