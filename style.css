@@ -66,10 +66,17 @@ added new lower image resolutions files
 optimized all images to remove exif data and compressed them
 
 
-****todo
+05/04/17
 
-create a medium img background and lazyload images
-https://codepen.io/jmperez/pen/yYjPER
+implemented a mediumn blog img load effect
+added about.js file
+changed the html structure of about.html to fit my needs
+added new css classes
+also added a
+
+
+****todo
+find a way to render the p tags in about.html via js because it being over ridden 
 create a media query the 100vh so that the style fits on landscape on phones
 choose a better font and color and size to better contrast the words with the pictures.
 
