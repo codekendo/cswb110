@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fish Creek Animal Hospital Contact Us</title>
+    <link rel="stylesheet" href="fishcreek.css">
+    <!--[if lt IE 9]>
+    <script src = "http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    function validateForm(){
+      if (document.forms[0].myEmail.value == ""){
+        alert("Please enter an email address.");
+        return false;
+      }
+      return true;
+    }
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>
+                Fish Creek Animal Hospital
+            </h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="askvet.html">Ask the Vet</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+          <h2>Contact Fish Creek</h2>
+          <form action="http://webdevbasics.net/scripts/fishcreek.php" method="POST" onsubmit="return validateForm();">
+            <label for="myName"> Name:</label>
+            <input type="text" name="myName" id="myName">
+            <label for="myEmail"> Email:</label>
+            <input type="email" name="myEmail" id="myEmail">
+            <label for="myComments"> Comments:</label>
+            <textarea name="myComments" rows="2" cols="20"></textarea>
+            <input type="submit" value="mySubmit" id="mySubmit">
+
+          </form>
+
+        </main>
+        <footer>
+            Copyright &copy; 2016 Fish Creek Animal Hospital
+            <br>
+            <a href="mailto:brandonwong8192@gmail.com">brandonwong8192@gmail.com</a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
