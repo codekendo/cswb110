@@ -72,15 +72,44 @@ implemented a mediumn blog img load effect
 added about.js file
 changed the html structure of about.html to fit my needs
 added new css classes
-also added a
+
+
+05/15/17
+
+Added a hover color for a link elements
+added margins and a media query for the project page
+deleted pictures for the about.html the cost of the paint was too much even
+chrome was having weird painting issues with the pictures and took way too long to load
+
+
+05/17/17
+
+Changed the margin top on my on mobile and desktop so it easier to scroll up and down the list of assignments
+added title to about page
+changed color of link hover elements
+added new images that are less 175kbs that should make the paint much easier
+added new contrast background for the lettering int about.html
+new p font size
+
+
+05/20/17
+
+added flexbox centering to the about center page
+added particlesjs in the about.html
+added a video cover for projects.js
+made sure mobile worked
+
 
 
 ****todo
-find a way to render the p tags in about.html via js because it being over ridden 
+integrate particle js into contacts
+find a way to render the p tags in about.html via js because it being over ridden
 create a media query the 100vh so that the style fits on landscape on phones
 choose a better font and color and size to better contrast the words with the pictures.
-
+Learn how to use a manifest to load offline data: ;
 */
+
+
 /*@font-face {
 font-family: 'Futura';
 src:url('FuturaLT-Book.ttf')  format('truetype');
@@ -88,145 +117,197 @@ src:url('FuturaLT-Book.ttf')  format('truetype');
 **/
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'galano';
-    src: url(fonts/galanogrotesquealtdemo-bold-webfont.woff2) format('woff2'), 
-    url(fonts/galanogrotesquealtdemo-bold-webfont.woff) format('woff'), 
-    url(fonts/galanogrotesquealtdemo-bold-webfont.ttf) format('truetype');
-    /* Safari, Android, iOS */
+  font-family: 'galano';
+  src: url(fonts/galanogrotesquealtdemo-bold-webfont.woff2) format('woff2'), 
+  url(fonts/galanogrotesquealtdemo-bold-webfont.woff) format('woff'), 
+  url(fonts/galanogrotesquealtdemo-bold-webfont.ttf) format('truetype');
+  /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: 'acherus';
-    src: url(fonts/acherus_grotesque_-_regular-webfont.woff2) format('woff2'), 
-    url(fonts/acherus_grotesque_-_regular-webfont.woff) format('woff'), 
-    url(fonts/acherus_grotesque_-_regular-webfont.ttf) format('truetype');
-    /* Safari, Android, iOS */
+  font-family: 'acherus';
+  src: url(fonts/acherus_grotesque_-_regular-webfont.woff2) format('woff2'), 
+  url(fonts/acherus_grotesque_-_regular-webfont.woff) format('woff'), 
+  url(fonts/acherus_grotesque_-_regular-webfont.ttf) format('truetype');
+  /* Safari, Android, iOS */
 }
+
+
 /******
 Selection
 ******/
 
 a::selection {
-    background: #FF1100;
+  background: #FF1100;
 }
 
-h1::selection, .underline::selection{
-  background:#3F4B54;
+h1::selection, .underline::selection {
+  background: #3F4B54;
 }
+
 
 /*************/
+
+
 /*******
 NAV
 *******/
 
 .nav a {
-    font-size: 1.25em;
-    margin: 0 5px 0 5px;
-    margin-top: 20px;
+  font-size: 1.25em;
+  margin: 0 5px 0 5px;
+  margin-top: 20px;
 }
+
+
 /**************/
+
+
 /****
 Font
 ****/
 
 html {
-    font-family: acherus, Verdana, Arial, sans-serif;
+  font-family: acherus, Verdana, Arial, sans-serif;
 }
 
 h1 {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
 
 h2 {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 h3 {
-    font-size: 1.15em;
+  font-size: 1.15em;
 }
 
 li {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 html {
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
 }
+
+
 /************/
 
 body {
-    background-color: #01579B;
-    color: #fff;
+  background-color: #01579B;
+  color: #fff;
 }
 
 a {
-    text-decoration: none;
-    color: #FF9400;
+  text-decoration: none;
+  color: #FF9400;
+}
+
+a:hover {
+  color: #F14500;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.underline {
+  border-bottom: 1.75px solid #fff;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+.fp-title {
+  padding-left: 0px;
+}
+
+@media only screen and (min-width:1024px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+#particles-js{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+  .content-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-}
-
-.underline {
-    border-bottom: 1.75px solid #fff;
-    margin-top: 50px;
-    margin-bottom: 5px;
-}
-
-.underline {
-    font-size: 1em;
-}
-
-ul {
-    padding-left: 15px;
-}
-
-.fp-title {
-    padding-left: 15px;
-}
-
-@media only screen and (min-width:1024px) {
-    .content-wrapper {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .underline {
+    margin-top: 20px;
+  }
+  #assignmentList li a:hover {
+    color: #F14500;
+  }
+  #contact-wrap {
+    margin-top: 250px;
+    position: absolute;
+    opacity: .85;
+    width: 370px;
+    padding: 1em;
+    background-color: #01355D;
+    z-index: 0;
+    align-self: center;
+  }
+  .contact-footer {
+    padding-bottom: 100px;
+  }
+  .proj-wrapper {
+    background-color: #959899;
+    padding: 1em;
+    opacity: .85;
+  }
+  #proj-section2 {
+    width: auto;
+    padding-top: 100px;
+    width: 700px;
+  }
 }

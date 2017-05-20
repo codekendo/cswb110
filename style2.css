@@ -10,26 +10,77 @@ added margins to space things out
 changed font size
 ***/
 
+a {
+  color: #293337;
+  font-weight: 800;
+}
 
-dt{
+a:hover {
+  color: #4E2D26;
+}
+
+dt {
   font-size: 1em;
   font-family: sans-serif;
   margin-left: 10px;
   border-bottom: 1.75px solid #fff;
-
-
-
 }
-dd{
+
+dd {
   margin-top: 10px;
-  font-size:1em;
+  font-size: 1em;
   margin-left: 35px;
   margin-bottom: 10px;
+}
 
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url('./videos/10K_Feet.jpg') no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width:1023px) {
+  video {
+    display: none;
+  }
+  a:hover {
+    color: #F14500;
+  }
+  a{
+    color: #FF9400;
+
+  }
 }
 
 @media only screen and (min-width:1024px) {
-main{
-  margin:0 400px;
-}
+  #proj-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .fp-title {
+    align-self: center;
+  }
 }

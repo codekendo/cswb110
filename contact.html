@@ -2,57 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1  user-scalable=no">
-    <meta charset="UTF-8">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1  user-scalable=no">
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <div id="particles-js" style="background-size:cover;"> </div>
+  <div id="contact-wrap">
     <div class="center nav">
-        <a href="https://codekendo.github.io/cswb110/">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./projects.html">Projects</a>
+      <a href="https://codekendo.github.io/cswb110/">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./projects.html">Projects</a>
     </div>
-    <main class="content-wrapper">
-        <h1>Conatct Me</h1>
+    <div class="center">
+      <h1>Contact Page</h1>
+    </div>
+  </div>
 
-        <form action="mailto:brandonwong8192@gmail.com" method="POST">
-<label name="prefix">Prefix:</label><br>
-          <select value="" id="prefix" name="prefix">
-            <option id="mr" value="Mr.">
-              Mr.
-            </option>
-            <option  id="mrs" value="Mrs.">
-              Mrs.
-            </option>
-          </select>
 
-<br>
-            <label for="firstname">Name:</label>
-            <br>
-            <input type="text" id="firstname" name="firstname" placeholder="firstname">
-            <br>
-            <label for="lastname">Lastname:</label>
-            <br>
-            <input type="text" id="lastname" name="lastname" placeholder="lastname">
-            <br>
-            <label for="email">Your Email</label>
-            <br>
-            <input type="email" id="email" name="email"  placeholder="Email">
-            <br>
-            <label for="comment">Comment</label>
-            <br>
-            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-            <br>
-            <input type="radio" name="typeOfEmail" value="Personal">Personal<br>
-            <input type="radio" name="typeOfEmail" value="">Business<br>
-            <input type="submit" value="submit">
-        </form>
+  <main class="content-wrapper">
+    <h1>Conatct Me</h1>
+    <form action="mailto:brandonwong8192@gmail.com" method="POST">
+      <label name="prefix">Prefix:</label><br>
+      <select value="" id="prefix" name="prefix">
+        <option id="mr" value="Mr.">
+          Mr.
+        </option>
+        <option  id="mrs" value="Mrs.">
+          Mrs.
+        </option>
+      </select>
 
-    </main>
+      <br>
+      <label for="firstname">Name:</label>
+      <br>
+      <input type="text" id="firstname" name="firstname" placeholder="First Name">
+      <br>
+      <label for="lastname">Lastname:</label>
+      <br>
+      <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+      <br>
+      <label for="email">Your Email</label>
+      <br>
+      <input type="email" id="email" name="email" placeholder="Email">
+      <br>
+      <label for="comment">Comment</label>
+      <br>
+      <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      <br>
+      <input type="radio" name="typeOfEmail" value="Personal">Personal<br>
+      <input type="radio" name="typeOfEmail" value="">Business<br>
+      <input type="submit" value="Submit">
+    </form>
 
+  </main>
+  <footer class="contact-footer">
+
+  </footer>
+  <script src="./particle.js"></script>
+  <script src="./app.js"></script>
 </body>
 
 </html>

@@ -92,6 +92,14 @@ added new contrast background for the lettering int about.html
 new p font size
 
 
+05/20/17
+
+added flexbox centering to the about center page
+added particlesjs in the about.html
+added a video cover for projects.js
+made sure mobile worked
+took off webpack
+
 
 
 ****todo
@@ -240,10 +248,21 @@ ul {
 }
 
 .fp-title {
-  padding-left: 15px;
+  padding-left: 0px;
 }
 
 @media only screen and (min-width:1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  #particles-js {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
   .content-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -268,5 +287,28 @@ ul {
   }
   #assignmentList li a:hover {
     color: #F14500;
+  }
+  #contact-wrap {
+    margin-top: 250px;
+    position: absolute;
+    opacity: .85;
+    width: 370px;
+    padding: 1em;
+    background-color: #01355D;
+    z-index: 0;
+    align-self: center;
+  }
+  .contact-footer {
+    padding-bottom: 100px;
+  }
+  .proj-wrapper {
+    background-color: #959899;
+    padding: 1em;
+    opacity: .85;
+  }
+  #proj-section2 {
+    width: auto;
+    padding-top: 100px;
+    width: 700px;
   }
 }
